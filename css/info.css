@@ -1,0 +1,76 @@
+.contain {
+    margin: 0;
+    height: 92.7vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sece {
+    flex-grow: 1;
+    display: flex;
+    height: 0px;
+}
+
+.saide {
+    width: 250px;
+    overflow: auto;
+    min-height: 0;
+    transition-property: width;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    background-color: #F2F2F2;
+}
+
+.mai {
+
+    overflow: auto;
+    flex-grow: 1;
+    min-height: 0;
+    transition-property: width;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.saide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.saide::-webkit-scrollbar {
+    display: none;
+}
+
+.mai {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.mai::-webkit-scrollbar {
+    display: none;
+}
+
+.sha {
+    box-shadow: none;
+}
+
+.sha:hover {
+    color: none;
+}
+
+.gona {
+    height: 200px;
+    width: 200px;
+}
+
+@media (max-width: 575.98px) {
+    .saide {
+        display: none;
+    }
+    .gona {
+        align-content: center;
+        height: 300px;
+        width: 300px;
+    }
+
+
+}
